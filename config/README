@@ -1,0 +1,2 @@
+# Dockerfile_ros2 builds successfully but there is an issue with the hesai drivers - no data is published
+# ROS1 version of hesai ros packages works alright, So we are using ros-bridge to send ros1 messages into ros2 network

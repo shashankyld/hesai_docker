@@ -1,0 +1,21 @@
+version: '3.7'
+
+services:
+  hesai-ready:
+    container_name: hesai-node-container
+    image: ipbalfredo/hesai-node:noetic
+    restart: always
+    privileged: true
+    network_mode: "host" # Use host network mode
+    ports:
+      - "8084:8084"
+    environment:
+      - DISPLAY=$DISPLAY
+      - QT_X11_NO_MITSHM=1
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - ./app:/app:rw
+      - /dev:/dev:ro
+      - ./config:/workspace/rosworkspace/src/HesaiLidar_General_ROS/launch/config
+    stdin_open: true
+    tty: true
