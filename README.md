@@ -12,4 +12,14 @@ and confirm if receiving address is correct by using
 ifconfig
 ```
 
+Step 1: Assuming that the image is built using the make file, Create a docker container using the make file in the repo home directoty
+```
+make up
+```
+
+Step 2: Run the launch file specific to your robot configuration, for ipb-alfredo
+```
+make launch_hesai_lidar_alfredo
+# This launch file is part of the cofig folder, this contains lidar iPv4 cofiguration - check this if you receive no messages
+```
 
