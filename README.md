@@ -6,7 +6,8 @@ Step 0: Inspect Lidar WebPage
 http://131.220.233.235/
 ```
 make sure that ip address of the lidar and the computer are in the same network iPv4 range (Use correct terminology here) 
-[Insert Image]
+![Lidar&Computer IPv4 Config](images/lidar_webpage_ip_config.png)
+
 and confirm if receiving address is correct by using 
 ```
 ifconfig
