@@ -7,6 +7,7 @@ http://131.220.233.235/
 ```
 make sure that ip address of the lidar and the computer are in the same network iPv4 range 
 <img src="Images/lidar_webpage_ip_config.png" alt="Lidar&Computer IPv4 Config" width="600">
+
 and confirm if receiving address is correct by using 
 ```
 ifconfig
@@ -23,3 +24,8 @@ make launch_hesai_lidar_alfredo
 # This launch file is part of the cofig folder, this contains lidar iPv4 cofiguration - check this if you receive no messages
 ```
 
+Step 3: You can now receive ROS1 topics in the host pc and the docker container. 
+```
+# To view Lidar data in RViz in the host machine, run the following before launching a GUI
+xhost +
+```
