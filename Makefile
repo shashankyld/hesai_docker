@@ -13,8 +13,8 @@ run:
 enter:
 	clear && docker exec -it ${CONT_NAME} bash
 
-launch_hesai:
-	clear && docker exec -it ${CONT_NAME} bash -c "source /opt/ros/noetic/setup.bash && roslaunch hesai_lidar hesai_lidar.launch lidar_type:="PandarXT-32" frame_id:="PandarXT-32""
+launch_hesai_lidar_alfredo:
+	clear && docker exec -it ${CONT_NAME} bash -c "source /workspace/rosworkspace/devel/setup.bash && roslaunch hesai_lidar hesai_lidar_alfredo.launch lidar_type:="PandarXT-32" frame_id:="PandarXT-32""
 
 down:
 	docker compose down
