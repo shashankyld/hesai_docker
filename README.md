@@ -29,3 +29,4 @@ Step 3: You can now receive ROS1 topics in the host pc and the docker container.
 # To view Lidar data in RViz in the host machine, run the following before launching a GUI
 xhost +
 ```
+THIS IS ROS2 BRANCH
