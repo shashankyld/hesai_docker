@@ -2,8 +2,8 @@ version: '3.7'
 
 services:
   hesai-ready:
-    container_name: hesai-node-container
-    image: ipbalfredo/hesai-node:noetic
+    container_name: hesai-ros2-node-container
+    image: ipbalfredo/hesai-node:humble
     restart: always
     privileged: true
     network_mode: "host" # Use host network mode
