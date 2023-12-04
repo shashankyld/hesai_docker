@@ -1,6 +1,15 @@
 # hesai_docker
 This docker contains ROS1 package of the hesai lidar. Use ROS1-ROS2 bridge docker to bridge lidar messages in ROS1 to ROS2 network.
 
+Step -1: Change IP address using
+```
+sudo ifconfig [interface_name] [new_ip_address] netmask [netmask] up
+```
+or 
+```
+sudo ifconfig [interface_name] [new_ip_address]
+```
+
 Step 0: Inspect Lidar WebPage
 ```
 http://131.220.233.235/
